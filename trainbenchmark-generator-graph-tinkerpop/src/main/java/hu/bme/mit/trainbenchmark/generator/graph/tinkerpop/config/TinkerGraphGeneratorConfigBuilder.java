@@ -1,7 +1,5 @@
 package hu.bme.mit.trainbenchmark.generator.graph.tinkerpop.config;
 
-import com.google.common.base.Preconditions;
-
 import hu.bme.mit.trainbenchmark.generator.config.GeneratorConfigBuilder;
 
 public class TinkerGraphGeneratorConfigBuilder
@@ -22,7 +20,7 @@ public class TinkerGraphGeneratorConfigBuilder
 	@Override
 	public void checkNotNulls() {
 		super.checkNotNulls();
-		Preconditions.checkNotNull(graphFormat);
+		//Preconditions.checkNotNull(graphFormat);
 	}
 
 }

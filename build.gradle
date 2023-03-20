@@ -5,8 +5,8 @@ allprojects  {
 
 subprojects {
 	apply plugin: 'java'
-	sourceCompatibility = 1.8
-	targetCompatibility = 1.8
+	sourceCompatibility = 11
+	targetCompatibility = 11
 
 	task packageSources(type: Jar) {
 		classifier = 'sources'
@@ -19,6 +19,7 @@ subprojects {
 		maven { url "https://repo.eclipse.org/content/groups/acceleo" }
 		maven { url "https://repo.eclipse.org/content/groups/viatra2" }
 		maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+		maven { url "https://repo.vaticle.com/repository/maven/" }
 	}
 }
 
@@ -50,6 +51,7 @@ ext {
 	slf4jVersion = '1.7.10'
 	sqliteVersion = '3.20.0'
 	tinkerGraphVersion = '3.2.5'
+	typedbVersion = '2.14.0'
 	viatraVersion = '1.6.1'
 	xtextVersion = '2.23.0'
 }
